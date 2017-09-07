@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>サンプル</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .l-container {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        .l-modal {
+            background-color:rgba(0,0,0,.5);
+            display: none;
+            left: 0;
+            height: 100%;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .fwBody {
+            padding: 10px;
+        }
+        .sgContainer {
+            position: relative;
+        }
+        .sgBody {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="l-container" id="js-container">
+        <h1>モーダルサジェスト作ってみたお</h1>
+        <div class="fwBody" id="js-fwBody">
+            <input type="text" class="form-control" placeholder="プロジェクター" name="" id="js-fwBox">
+        </div>
+    </div>
+    <div class="l-modal" id="js-modal">
+        <div class="sgContainer">
+            <div class="input-group">
+                <input type="text" class="form-control" name="" id="js-sgst">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" id="js-srch"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="button" class="btn btn-default" id="js-close">×</button>
+                </div>
+            </div>
+            <div class="sgBody" id="js-sgBody">
+                <ul class="sgListGroup" id="js-sgList">
+                </ul>    
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>  
+    <script src="suggest.js"></script>
+</body>
+</html>
