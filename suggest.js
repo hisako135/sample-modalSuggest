@@ -19,7 +19,7 @@ $(function(){
     srchBtn.on('click',function(){
         var fw = kwrd.val();
         $.ajax({
-            url: "http://completion.amazon.co.jp/search/complete",
+            url: "//completion.amazon.co.jp/search/complete",
             data: {mkt:'6', method:'completion', 'search-alias':'aps', q:fw},
             dataType: "jsonp",
             type: "GET",
