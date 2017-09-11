@@ -1,0 +1,25 @@
+.l-container {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.l-modal {
+    background-color:rgba(0,0,0,.5);
+    display: none;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.fwBody {
+    padding: 10px;
+}
+.sgContainer {
+    position: relative;
+}
+.sgBody {
+    visibility: hidden;
+}
